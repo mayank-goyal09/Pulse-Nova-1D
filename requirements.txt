@@ -1,0 +1,10 @@
+wfdb             # Reading MIT-BIH database files
+biosppy           # Professional biosignal processing
+numpy             # Numerical computing
+pandas            # Data manipulation
+matplotlib        # Plotting & visualization
+seaborn           # Statistical visualizations
+tensorflow        # 1D-CNN deep learning model
+scikit-learn      # Train/test split, metrics, class weights
+scipy             # Signal filtering (bandpass, Butterworth)
+streamlit         # Web app deployment
