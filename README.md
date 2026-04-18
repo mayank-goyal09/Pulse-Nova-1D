@@ -5,10 +5,18 @@
 </p>
 
 <p align="center">
+  <a href="https://pulse-nova-1d-project.streamlit.app/">
+    <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Streamlit App">
+  </a>
+</p>
+
+<p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
 </p>
 
 > **AI-powered detection of life-threatening heart rhythm abnormalities from raw ECG signals using Deep Learning.**
+>
+> 🚀 **Live Demo:** [pulse-nova-1d-project.streamlit.app](https://pulse-nova-1d-project.streamlit.app/)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python" alt="Python">
