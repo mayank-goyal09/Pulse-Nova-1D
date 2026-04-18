@@ -1,13 +1,26 @@
-# 🫀 ECG Arrhythmia Detection using 1D-CNN
+# 🫀 Pulse Nova 1D — ECG Arrhythmia Detection
 
-> **AI-powered detection of life-threatening heart rhythm abnormalities from raw ECG signals**
+<p align="center">
+  <img src="assets/header.png" width="100%" alt="Pulse Nova Header">
+</p>
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow)
-![Accuracy](https://img.shields.io/badge/Accuracy-96.48%25-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
+</p>
+
+> **AI-powered detection of life-threatening heart rhythm abnormalities from raw ECG signals using Deep Learning.**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/TensorFlow-2.x-orange?style=for-the-badge&logo=tensorflow" alt="TensorFlow">
+  <img src="https://img.shields.io/badge/Accuracy-96.48%25-brightgreen?style=for-the-badge" alt="Accuracy">
+</p>
 
 ---
+
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHp6eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKVUn7iM8FMEU24/giphy.gif" width="150" alt="Heart Beat">
+</p>
 
 ## 📋 Overview
 

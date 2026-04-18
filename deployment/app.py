@@ -230,7 +230,12 @@ def load_preprocessor():
 def main():
     # ── SIDEBAR ──
     with st.sidebar:
-        st.image("https://img.icons8.com/fluency/96/heart-with-pulse.png", width=60)
+        # Add a nice heartbeat animation to the top of the sidebar
+        st.markdown("""
+            <div style="display: flex; justify-content: center; padding-bottom: 20px;">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHp6eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKVUn7iM8FMEU24/giphy.gif" width="100">
+            </div>
+        """, unsafe_allow_html=True)
         st.title("Pulse Nova 1D")
         st.caption("Deep Learning ECG Analyzer")
         st.divider()
@@ -279,6 +284,14 @@ def main():
     st.caption("Automated arrhythmia detection powered by a 1D Convolutional Neural Network trained on the MIT-BIH Arrhythmia Database.")
     
     if signal is None:
+        # Premium landing page animation
+        st.markdown("""
+            <div style="background: linear-gradient(90deg, #13092a, #1c0f38); padding: 20px; border-radius: 15px; border: 1px solid #5b21b6; margin-bottom: 30px; text-align: center;">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHp6eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l41lM8p66V1z5rGwa/giphy.gif" width="600" style="border-radius: 10px;">
+                <p style="color: #c4b5fd; font-size: 1.1rem; margin-top: 15px;">Real-time Cardiovascular Diagnostics Dashboard</p>
+            </div>
+        """, unsafe_allow_html=True)
+        
         st.warning("👈 Select a patient case from the sidebar or upload a CSV file to begin.")
         
         # Landing page with educational content
