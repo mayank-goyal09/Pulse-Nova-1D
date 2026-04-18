@@ -244,20 +244,21 @@ def main():
         patient = {}
         
         if source == "🏥 Case Library (Local Only)":
-            st.warning("Case Library is only available during local development if the 'data/raw' folder exists.")
-            # case_name = st.selectbox("Select Patient", list(SAMPLE_CASES.keys()))
-            # case = SAMPLE_CASES[case_name]
-            # data_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'raw')
-            # path = os.path.join(data_dir, case['file'])
-            # 
-            # if os.path.exists(path):
-            #     df = pd.read_csv(path)
-            #     df.columns = [c.strip("'") for c in df.columns]
-            #     signal = df['MLII'].values
-            #     patient = case
-            #     patient['id'] = case['file'].replace('.csv', '')
-            # 
-            # st.info(f"📝 {case['note']}")
+            case_name = st.selectbox("Select Patient", list(SAMPLE_CASES.keys()))
+            case = SAMPLE_CASES[case_name]
+            data_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'raw')
+            path = os.path.join(data_dir, case['file'])
+            
+            if os.path.exists(path):
+                df = pd.read_csv(path)
+                df.columns = [c.strip("'") for c in df.columns]
+                signal = df['MLII'].values
+                patient = case
+                patient['id'] = case['file'].replace('.csv', '')
+            else:
+                st.error(f"File not found: {path}")
+            
+            st.info(f"📝 {case['note']}")
         else:
             uploaded = st.file_uploader("Upload ECG CSV", type=['csv'])
             if uploaded:
